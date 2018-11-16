@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jay.finddoc.BookingDetails"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor Info:"
+            android:layout_margin="5dp"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBDfname"
+                android:text="DocfName"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBDlname"
+                android:layout_weight="1"
+                android:text="DoclName"
+                android:layout_margin="5dp"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tvBDbdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+   
+                android:hint="BookDate"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Booking Date" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtnnewbookdate"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tvBDbtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="BookTime"
+   
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Booking Time" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtnnewbooktime"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tvBDpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="PlaceDate"
+   
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Booking Place Date" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tvBDptime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="PlaceTime"
+   
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Booking Place Time" />
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tvBDpurpose"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:lines="3"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="Purpose"
+            
+            android:inputType="text"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Booking Purpose"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+            <info.hoang8f.widget.FButton
+        android:id="@+id/btnRowModify"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:minHeight="@dimen/demo_button_min_height"
+        android:minWidth="@dimen/demo_button_min_width"
+        android:text="Modify"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        fbutton:buttonColor="@color/fbutton_color_turquoise"
+        fbutton:shadowEnabled="true" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRowDel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="Delete"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowEnabled="true" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRowUser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="User Details"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowEnabled="true" />
+
+        </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnRowSave"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Save Changes"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnRowCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Cancel Changes"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/tvBid"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/accent"
+        android:gravity="center_vertical"
+        android:text="Booking"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tvbBfname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="DName"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvbBlname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="DSurname"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnRowShow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:minHeight="@dimen/demo_button_min_height"
+        android:minWidth="@dimen/demo_button_min_width"
+        android:text="Show"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        fbutton:buttonColor="@color/fbutton_color_turquoise"
+        fbutton:shadowEnabled="true" />
+
+</LinearLayout>

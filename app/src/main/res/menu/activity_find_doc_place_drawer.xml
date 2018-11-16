@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adajan"
+            android:title="@string/nav_adajan"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_althan"
+            android:title="@string/nav_althan"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_athwa"
+            android:title="@string/nav_athwa"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_bhatar"
+            android:title="@string/nav_bhatar"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_citylight"
+            android:title="@string/nav_citylight"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_delhigate"
+            android:title="@string/nav_delhigate"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_katargam"
+            android:title="@string/nav_katargam"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_nanpura"
+            android:title="@string/nav_nanpura"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_olpad"
+            android:title="@string/nav_olpad"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_pandesara"
+            android:title="@string/nav_pandesara"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_udhna"
+            android:title="@string/nav_udhna"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_varacha"
+            android:title="@string/nav_varacha"
+            android:orderInCategory="100"/>
+    </group>
+
+    <item android:title="Communicate"
+        android:orderInCategory="200">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                android:orderInCategory="200"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"
+                android:orderInCategory="200"/>
+        </menu>
+    </item>
+
+</menu>

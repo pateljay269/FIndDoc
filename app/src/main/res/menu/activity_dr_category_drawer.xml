@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_audio"
+            android:title="@string/nav_audiologist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_allergist"
+            android:title="@string/nav_allergist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_cardio"
+            android:title="@string/nav_cardiologist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_dentist"
+            android:title="@string/nav_dentist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_dermatologist"
+            android:title="@string/nav_dermatologist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_gyno"
+            android:title="@string/nav_gynecologist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_neurologist"
+            android:title="@string/nav_neurologist"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_neurosurgon"
+            android:title="@string/nav_neurosurgon"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_ortho"
+            android:title="@string/nav_orthopedic"
+            android:orderInCategory="100"/>
+        <item
+            android:id="@+id/nav_radiologist"
+            android:title="@string/nav_radiologist"
+            android:orderInCategory="100"/>
+    </group>
+
+    <item android:title="Communicate"
+        android:orderInCategory="200">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                android:orderInCategory="200"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"
+                android:orderInCategory="200"/>
+        </menu>
+    </item>
+
+</menu>

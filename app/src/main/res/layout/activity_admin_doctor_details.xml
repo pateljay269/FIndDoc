@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jay.finddoc.AdminDoctorDetails">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etADfname"
+                android:inputType="text"
+                android:hint="Enter First Name:"
+   
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="First Name"
+                android:layout_weight="1"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etADlname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Last Name:"
+   
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Last Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etADemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="Email"
+   
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="E-mail" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etADdob"
+                android:hint="dob"
+   
+                android:layout_weight="2"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="DOB"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etADLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Lat"
+   
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Latitude" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etADLong"
+                android:layout_weight="1"
+                android:hint="Enter Long"
+   
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Longitude" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category" />
+
+                <Spinner
+                    android:id="@+id/spinner_ADspecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/special_grp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"/>
+
+                <Spinner
+                    android:id="@+id/spinner_ADgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gender"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etADaddress"
+            android:inputType="text"
+            android:hint="Enter Address"
+            
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Address"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etADTaluka"
+            android:inputType="text"
+            android:hint="Enter Taluka"
+            
+            android:layout_weight="1"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Taluka" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etADDistrict"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:hint="Enter District"
+   
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="District"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State" />
+
+                <Spinner
+                    android:id="@+id/spinner_ADstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/state"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnADRowModify"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Modify"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnADRowDel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Delete"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnADRowbook"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Bookings"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnADRowSave"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Save Changes"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnADRowCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Cancel Changes"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

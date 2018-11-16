@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jay.finddoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name=".RegisterActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".HomescreenActivity"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PatientDashActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MyprofileActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".BookAppointActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".DrCategoryActivity"
+            android:label="@string/title_activity_dr_category"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ProfileDetailActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ChangePasswordActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".FindDoctorActivity"
+            android:label="@string/title_activity_find_doctor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RegisterDocActivity"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SearchAppointActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ForgotPasswordActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FindDocPlace"
+            android:label="@string/title_activity_find_doc_place"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MyCalender"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".BookingDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminDash"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminUserDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AdminDoctorDetails"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

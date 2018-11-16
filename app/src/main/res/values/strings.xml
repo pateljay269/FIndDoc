@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">FIndDoc</string>
+    <string name="Loading_Complete">Loading_COmplete</string>
+    <string name="heading">Welcome To The Doctor Finder Application</string>
+
+    <string-array name="blood_grp">
+        <item>Select Blood Group</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+
+    </string-array>
+
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Andra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string-array name="special_grp">
+        <item>Select Category</item>
+        <item>Audiologist</item>
+        <item>Allergist</item>
+        <item>Cardiologist</item>
+        <item>Dentist</item>
+        <item>Dermatologist</item>
+        <item>Gynecologist</item>
+        <item>Neurologist</item>
+        <item>Neurosurgon</item>
+        <item>Orthopedic</item>
+        <item>Radiologist</item>
+
+    </string-array>
+
+    <string-array name="District">
+
+        <item>Select Areas</item>
+        <item>Adajan</item>
+        <item>Althan</item>
+        <item>Athwalines</item>
+        <item>Bhatar</item>
+        <item>Citylight</item>
+        <item>Delhi Gate</item>
+        <item>Katargam</item>
+        <item>Nanpura</item>
+        <item>Olpad</item>
+        <item>Pandesara</item>
+        <item>Udhna</item>
+        <item>Varachha</item>
+
+    </string-array>
+
+    <string-array name="gj5">
+
+        <item>Select Area</item>
+        <item>Adajan</item>
+        <item>Althan</item>
+        <item>Athwalines</item>
+        <item>Bhatar</item>
+        <item>Citylight</item>
+        <item>Delhi Gate</item>
+        <item>Katargam</item>
+        <item>Nanpura</item>
+        <item>Olpad</item>
+        <item>Pandesara</item>
+        <item>Udhna</item>
+        <item>Varacha</item>
+
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="nav_adajan">Adajan</string>
+    <string name="nav_althan">Althan</string>
+    <string name="nav_athwa">Athwalines</string>
+    <string name="nav_bhatar">Bhatar</string>
+    <string name="nav_citylight">Citylight</string>
+    <string name="nav_delhigate">Delhi Gate</string>
+    <string name="nav_katargam">Katargam</string>
+    <string name="nav_nanpura">Nanpura</string>
+    <string name="nav_olpad">Olpad</string>
+    <string name="nav_pandesara">Pandesara</string>
+    <string name="nav_udhna">Udhna</string>
+    <string name="nav_varacha">Varacha</string>
+
+    <string name="nav_audiologist">Audiologist</string>
+    <string name="nav_allergist">Allergist</string>
+    <string name="nav_cardiologist">Cardiologist</string>
+    <string name="nav_dentist">Dentist</string>
+    <string name="nav_dermatologist">Dermatologist</string>
+    <string name="nav_gynecologist">Gynecologist</string>
+    <string name="nav_neurologist">Neurologist</string>
+    <string name="nav_neurosurgon">Neurosurgon</string>
+    <string name="nav_orthopedic">Orthopedic</string>
+    <string name="nav_radiologist">Radiologist</string>
+
+    <string name="title_activity_my_reports">MyReportsActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_dr_category">DrCategoryActivity</string>
+    <string name="title_activity_find_doctor">Map</string>
+    <string name="title_activity_find_doc_place">FindDocPlace</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

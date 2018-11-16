@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_homescreen"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.jay.finddoc.HomescreenActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heading"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etlemail"
+            android:inputType="text"
+            android:hint="Enter E-Mail:"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="E-Mail" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etlpass"
+            android:inputType="textPassword"
+            android:hint="Enter Password:"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Password" />
+
+        <Button
+            android:id="@+id/btnHforgotpass"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="20dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="Forgot Password"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnHRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Register"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnHlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="Login"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowEnabled="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_book_appoint"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.jay.finddoc.BookAppointActivity"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etbookemail"
+            android:inputType="textEmailAddress"
+            android:hint="Enter E-mail"
+            app:met_floatingLabel="highlight"
+            
+            app:met_floatingLabelText="E-mail" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etbookmob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile No."
+            android:inputType="number"
+            android:maxLength="10"
+            
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Mobile No." />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etbookdname"
+            
+            android:inputType="text"
+            android:hint="Enter Doctor/Hospital Name:"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Doctor/Hospital Name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etbookdate"
+                android:inputType="date"
+                android:hint="Select Date Of Appointment"
+                app:met_floatingLabel="highlight"
+   
+                app:met_floatingLabelText="Date Of Appointment"
+                android:layout_weight="1"
+                android:enabled="false"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnappointdate"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etbooktime"
+                android:inputType="date"
+                android:hint="Select Time"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Time"
+   
+                android:layout_weight="1"
+                android:enabled="false"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnappointtime"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/etbookpurpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:lines="5"
+            android:maxLength="100"
+            android:hint="Enter Purpose:"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnbook"
+            
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="Book Appointment"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowEnabled="true" />
+
+    </LinearLayout>
+
+</ScrollView>

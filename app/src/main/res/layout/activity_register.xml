@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:weightSum="1"
+        android:id="@+id/activity_home"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.jay.finddoc.RegisterActivity"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Register Form"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etfname"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:hint="Enter First Name:"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="First Name"
+                android:layout_weight="1"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etlname"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:hint="Enter Last Name:"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Last Name"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etemail"
+            android:inputType="textEmailAddress"
+            android:hint="Enter E-mail"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="E-mail" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etpass"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:layout_weight="1"
+            android:hint="Enter Password:"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Password" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etConfirmpass"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:hint="Re-Enter Password:"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Re-Enter Password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textSize="20sp"
+            android:id="@+id/textView2" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etmob"
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_weight="1"
+            android:hint="Enter Mobile No."
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Mobile No." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etdob"
+                android:inputType="date"
+                android:hint="Select Date Of Birth"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="DOB"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btndob"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/blood_grp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/blood_grp"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/gender"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etaddress"
+            android:inputType="text"
+            android:hint="Enter Address"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Address"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPatTaluka"
+                android:inputType="text"
+                android:hint="Enter Taluka"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Taluka"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPatDistrict"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="Enter District"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="District"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPatpincode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:hint="Enter Pincode"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Pincode"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_Patstate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/state"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowEnabled="true" />
+
+    </LinearLayout>
+
+</ScrollView>
